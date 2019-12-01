@@ -21,6 +21,9 @@ function NavBar() {
                     <li className="nav-item"> <a className="nav-link" href="/">Home</a></li>
                     <li className="nav-item"> <a className="nav-link" href="/products">Our Products</a></li>
                     <li className="nav-item"> <a className="nav-link" href="/contacts">Contact Us </a> </li>
+                    <li className="nav-item"> <a className="nav-link" href="/login">Login</a> </li>
+                    <li className="nav-item"> <a className="nav-link" href="/signup">Signup</a> </li>
+                    <li className="nav-item"> <a className="nav-link" href="/logout">Logout</a> </li>
                 </ul>
             </div>
         </nav>
