@@ -1,14 +1,14 @@
 const router = require('express').Router();
 let Product = require('../models/products');
 // 1. get all products on record
-router.get('/', (req, res) => {
-    Product.find({}, (err, data) => {
-        if (err) {
-            res.send(err)
-        } else {
-            res.json(data)
-        }
-    })
+router.get('/', async(req, res) => {
+    try {
+        let products = await Product.find();
+        return res.send(products) 
+    }
+    catch(err){
+        console.log(err)
+    }
 })
 
 

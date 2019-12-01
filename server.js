@@ -12,15 +12,15 @@ const path = require('path');
 const fs = require('fs')
 
 const app = express();
-const PORT = 3001
+const PORT = 5000
 let uri=process.env.ATLAS_URI;
 
 if(process.env.NODE_ENV ==="production"){
   app.use(express.static("client/build"));
   uri = proccess.env.ATLAS_URI
  } else{
-     uri ="mongodb://localhost/products"
-    //uri = process.env.ATLAS_URI
+    //  uri ="mongodb://localhost/products"
+    uri = process.env.ATLAS_URI
   }
 
 mongoose.connect(uri,{
@@ -69,8 +69,8 @@ const productsRouter = require('./Routes/products');
 // app.get('/api', (req, res) => {
 //     res.json({message: "API root"})
 // })
-app.use('/api/users', usersRoutes)
 app.use('/api/products',productsRouter);
+app.use('/api/users', usersRoutes)
 
 app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));

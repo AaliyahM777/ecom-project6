@@ -1,6 +1,7 @@
 const express = require('express')
 const usersCtrl= require('../controllers')
 const verifyToken=require('../auth').verifyToken
+
 // const Users = require("../models/users")
 // const router = new express.Router()
 const usersRouter = new express.Router()
@@ -16,14 +17,15 @@ const usersRouter = new express.Router()
 //         console.log(err)
 //     }
 // })
+usersRouter.route('/').get(usersCtrl.index)
 
 usersRouter.route('/').post(usersCtrl.create)
 
 usersRouter.post('/authenticate',usersCtrl.authenticate)
 
-// usersRouter.use(verifyToken)
 
-usersRouter.route('/').get(usersCtrl.index)
+usersRouter.use(verifyToken)
+
 
 usersRouter.route('/:id').get(usersCtrl.show)
 
