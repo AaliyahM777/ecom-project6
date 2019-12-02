@@ -14,7 +14,7 @@ import LogOut from './Logout';
  */
 
 function NavBar(props) {
-    const { currentUser, onLoginSuccess, onLogOut, OnSignUpSuccess } = props
+    const { currentUser, onLoginSuccess, onLogOut, onSignUpSuccess } = props
     return(  
         <Router>
             {currentUser
@@ -71,7 +71,7 @@ function NavBar(props) {
                             </ul>
                             <Route exact path="/" component={Home} />
                             <Route path="/login" render={(props) => <LogIn {...props} onLoginSuccess={onLoginSuccess} />} />
-                            <Route path="/signup" render={(props) => <SignUp {...props} OnSignUpSuccess={OnSignUpSuccess} />} />
+                            <Route path="/signup" render={(props) => <SignUp {...props} onSignUpSuccess={onSignUpSuccess} />} />
                         </div>
                     </nav>
                 </div>
