@@ -55,7 +55,7 @@ class SignUp extends React.Component {
                     required 
                     value={password} />
                     <button className="btn btn-primary btnSpace">Sign Up</button>
-                    <Link to="/login" className="btn btn-primary">Log In</Link>                 
+                  
                 </form>
             </div>
         )
