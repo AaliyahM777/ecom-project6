@@ -6,7 +6,7 @@ const User = require('../models/users')
 
 //this should be aquired via .env or mircoservice
 
-const JWT_SECRET = 'thisismysecretkey'
+const JWT_SECRET = process.env.JWT_SECRET
 
 
 //function for creating tokens
