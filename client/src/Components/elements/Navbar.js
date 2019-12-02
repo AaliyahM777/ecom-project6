@@ -3,9 +3,9 @@ import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 import Home from '../pages/Home';
 import Products from '../pages/Products';
 import Contacts from '../pages/Contacts';
-import Login from './Login';
+import LogIn from './Login';
 import Logout from './Logout';
-import Signup from './Signup';
+import SignUp from './Signup';
 
 /* created a  navbar functional component and it returns 
   how the navbar  links will dsiplay and look through bootstrap
@@ -69,8 +69,8 @@ function NavBar(props) {
                                 </li>
                             </ul>
                             <Route exact path="/" component={Home} />
-                            <Route path="/login" component={Login} />
-                            <Route path="/signup" component={Signup} />
+                            <Route path="/login" component={LogIn} />
+                            <Route path="/signup" component={SignUp} />
                         </div>
                     </nav>
                 </div>
