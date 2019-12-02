@@ -14,8 +14,8 @@ function NavBar() {
                 <span className="navbar-toggler-icon">&#9776;</span>
             </button>
 
-            <a className="navbar-brand" href="/products"><img src="LogoMakr_1Igl02.png" class="img-fluid"/> </a>
-            <div className="collaspe navbar-collapse" id="navigation-bar">
+            <a className="navbar-brand" href="/products"><img src="https://library.kissclipart.com/20190223/biw/kissclipart-pen-tool-logo-png-clipart-pen-clip-art-f38f00d153e75c72.png" class="img-fluid" alt="penpowerslogo"/> </a>
+            <div className="collaspe navbar-collapse">
                 <ul className="navbar-nav ml-auto">
                     {/*My navbar links linking to each page withing website*/}
                     <li className="nav-item"> <a className="nav-link" href="/">Home</a></li>
