@@ -32,28 +32,28 @@ class App extends React.Component {
         const { currentUser } = this.state
         return (
             <Router>
-                <NavBar/>
+                <NavBar currentUser={this.state.currentUser}/>
             <div className='App container'>
-                <NavBar currentUser={currentUser} />
-                <Switch>
+                 {/* <NavBar currentUser={this.state.currentUser} /> */}
+                {/* <Switch>
                 <Route exact path="/" component={Home} />
                     <Route path="/Login" render={(props) => {
                         return <LogIn {...props} onLoginSuccess={this.onLoginSuccess.bind(this)} />
-                    }} />
-                    <Route path="/Logout" render={(props) => {
+                    }} /> */}
+                    {/* <Route path="/Logout" render={(props) => {
                         return <LogOut onLogOut={this.logOut.bind(this)} />
                     }} />
                     {/* the sign up component takes an 'onSignUpSuccess' prop which will perform the same thing as onLoginSuccess: set the state to contain the currentUser */}
-                    <Route path="/signup" render={(props) => {
+                    {/* <Route path="/signup" render={(props) => {
                         return <SignUp {...props} onSignUpSuccess={this.onLoginSuccess.bind(this)} />
                     }} />
-                      <Route path="/contacts" component={Contacts} />
-                    <Route path="/products" render={() => {
+                      <Route path="/contacts" component={Contacts} /> */}
+                    {/* <Route path="/products" render={() => {
                         return currentUser
                             ? <Products />
                             : <Redirect to="/login" />
                     }} />
-                </Switch>
+                </Switch> */}
                 <Footer/>
             </div>
             </Router>
