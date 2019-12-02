@@ -6,6 +6,7 @@ import Contacts from '../pages/Contacts';
 import LogIn from './Login';
 import Logout from './Logout';
 import SignUp from './Signup';
+import LogOut from './Logout';
 
 /* created a  navbar functional component and it returns 
   how the navbar  links will dsiplay and look through bootstrap
@@ -13,7 +14,7 @@ import SignUp from './Signup';
  */
 
 function NavBar(props) {
-    const { currentUser } = props
+    const { currentUser, onLoginSuccess, onLogOut, OnSignUpSuccess } = props
     return(  
         <Router>
             {currentUser
@@ -43,7 +44,7 @@ function NavBar(props) {
                         <Route exact path="/" component={Home} />
                         <Route path="/products" component={Products} />
                         <Route path="/contact" component={Contacts} />
-                        <Route path="/logout" component={Logout} />
+                        <Route path="/logout" render={(props) => <LogOut {...props} onLogOut={onLogOut} />} />
                     </div>
                     </nav>
                 </div>
@@ -69,8 +70,8 @@ function NavBar(props) {
                                 </li>
                             </ul>
                             <Route exact path="/" component={Home} />
-                            <Route path="/login" component={LogIn} />
-                            <Route path="/signup" component={SignUp} />
+                            <Route path="/login" render={(props) => <LogIn {...props} onLoginSuccess={onLoginSuccess} />} />
+                            <Route path="/signup" render={(props) => <OnSignUpSuccess {...props} OnSignUpSuccess={OnSignUpSuccess} />} />
                         </div>
                     </nav>
                 </div>

@@ -19,11 +19,11 @@ import SignUp from './Components/elements/Signup'
 
 class App extends React.Component {
     state = { currentUser: httpClient.getCurrentUser() }
-    onLoginSuccess(user) {
+    onLoginSuccess = (user) => {
                                 
         this.setState({ currentUser: httpClient.getCurrentUser() })
     }
-    logOut() {
+    onLogOut = () => {
         httpClient.logOut()
         this.setState({ currentUser: null })
     }
@@ -32,7 +32,12 @@ class App extends React.Component {
         const { currentUser } = this.state
         return (
             <Router>
-                <NavBar currentUser={this.state.currentUser}/>
+                <NavBar 
+                currentUser={this.state.currentUser}
+                onLoginSuccess={this.onLoginSuccess}
+                onLogOut={this.onLogOut}
+                onSignUpSuccess={this.onLoginSuccess}
+                />
             <div className='App container'>
                  {/* <NavBar currentUser={this.state.currentUser} /> */}
                 {/* <Switch>
