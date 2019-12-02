@@ -71,7 +71,7 @@ function NavBar(props) {
                             </ul>
                             <Route exact path="/" component={Home} />
                             <Route path="/login" render={(props) => <LogIn {...props} onLoginSuccess={onLoginSuccess} />} />
-                            <Route path="/signup" render={(props) => <OnSignUpSuccess {...props} OnSignUpSuccess={OnSignUpSuccess} />} />
+                            <Route path="/signup" render={(props) => <SignUp {...props} OnSignUpSuccess={OnSignUpSuccess} />} />
                         </div>
                     </nav>
                 </div>
