@@ -10,6 +10,7 @@ const Product= require('./models/products');
 const mongoose= require('mongoose');
 const path = require('path');
 const fs = require('fs')
+const cors= require('cors')
 
 const app = express();
 const PORT = 5000
@@ -55,7 +56,7 @@ app.use((req, res, next) => {
   res.set('Access-Control-Allow-Origin', 'http://localhost:3000')
   next()
 })
-
+app.use(cors())
 
 // app.get('/api/products', async (req, res)=> {
 //  const products = await Product.find();
