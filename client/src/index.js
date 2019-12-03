@@ -73,3 +73,7 @@ ReactDOM.render(
 
 
 
+serviceWorker.register();
+
+
+
