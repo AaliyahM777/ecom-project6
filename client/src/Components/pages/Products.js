@@ -46,27 +46,30 @@ class Products extends React.Component {
                 <div>
                     <section id="work">
                         <div className="penproducts">
-                            <div className="row">
-                                <div className="col-md-12 page-header">
-                                    <h2>Our Products</h2>
-                                    <p>Choose from our Pen collection</p>
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col-md-12 page-header">
+                                        <h2>Our Products</h2>
+                                        <p>Choose from our Pen collection</p>
+                                    </div>
                                 </div>
                             </div>
                                  {/* we created onclick event that will call our categories bus,funartpens as our filter button */}
-                            <div className="row">
-                                <button className="filter-label" onClick={() => getFilteredProducts('businesspens')}>Business Pens</button>
-                                <input type="radio" id="blue" name="color"/>
-                                <button className="filter-label" onClick={() => getFilteredProducts('funartpens')}>Fun/Art Pens</button>
-                                <input type="radio" id="red" name="color" />
-                                <button className="filter-label" onClick={() => getPricess()}>Under $10</button>
-                                <input type="radio" id="green" name="color" />
-                                <input type="radio" id="reset" name="color" />
-                                <label className="filter-label" htmlfor="reset">All</label>
-                                
-                                {/* we call our product cards this.state.data so we refresh the page 
-                                it will give us a new set of product cards depending on what data is being requested */}
-                                {<ProductCards proddata={this.state.data} />}
-                                
+                            <div className="container">
+                                <div className="row">
+                                    <button className="filter-label" onClick={() => getFilteredProducts('businesspens')}>Business Pens</button>
+                                    <input type="radio" id="blue" name="color"/>
+                                    <button className="filter-label" onClick={() => getFilteredProducts('funartpens')}>Fun/Art Pens</button>
+                                    <input type="radio" id="red" name="color" />
+                                    <button className="filter-label" onClick={() => getPricess()}>Under $10</button>
+                                    <input type="radio" id="green" name="color" />
+                                    <input type="radio" id="reset" name="color" />
+                                    <label className="filter-label" htmlfor="reset">All</label>
+                                    
+                                    {/* we call our product cards this.state.data so we refresh the page 
+                                    it will give us a new set of product cards depending on what data is being requested */}
+                                    {<ProductCards proddata={this.state.data} />}
+                                </div>
                             </div>
                         </div>
                     </section>
