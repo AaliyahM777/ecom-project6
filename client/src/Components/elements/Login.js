@@ -26,7 +26,7 @@ class LogIn extends React.Component {
     render() {
         const { email, password } = this.state.fields
         return (
-            <div className='container LogIn'>
+            <div className='LogIn'>
                 <div className='row'>
                     <div className='column column-33 column-offset-33'>
                         <h1>Log In</h1>

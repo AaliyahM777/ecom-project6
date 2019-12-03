@@ -47,36 +47,30 @@ function Contacts() {
                         <fieldset>
                             <legend>General Information</legend>
                                 {/* <div className="container"> */}
-                                <div className="container">
-                                    <div className="row">
-                                        <div className="col">
-                                            <label for="Full Name">Full Name:</label>
-                                            
-                                            <input type="text" onChange={() => changeInput('name') } name="Full Name" id="full-name" placeholder="John" />
-                                            <div id="name-error"></div>
-                                        </div>
+                                <div className="row">
+                                    <div className="col">
+                                        <label for="Full Name">Full Name:</label>
+                                        
+                                        <input type="text" onChange={() => changeInput('name') } name="Full Name" id="full-name" placeholder="John" />
+                                        <div id="name-error"></div>
+                                    </div>
 
-                                    </div>
                                 </div>
-                                <div className="container">
-                                    <div className="row">
-                                        <div className="col">
-                                            <label for="Email Address">Email Address:</label>
-                                            <input type="text" onChange={() => changeInput('email') }name="Email" id="email" placeholder="John345@gmail.com" />
-                                            <div id="email-error"></div>
-                                        </div>
-                                    </div>
+                                <div className="row">
+                                <div className="col">
+                                    <label for="Email Address">Email Address:</label>
+                                    <input type="text" onChange={() => changeInput('email') }name="Email" id="email" placeholder="John345@gmail.com" />
+                                    <div id="email-error"></div>
+                                </div>
                                 </div>
                         </fieldset>
 
                         <fieldset>
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col">
-                                        <label for="essay">For any questions or comments <br />add your message down below here:</label><br />
+                            <div className="row">
+                                <div className="col">
+                                    <label for="essay">For any questions or comments <br />add your message down below here:</label><br />
 
-                                        <textarea name="essay" id="essay" rows="20" cols="50" placeholder="Comment here"></textarea>
-                                    </div>
+                                    <textarea name="essay" id="essay" rows="20" cols="50" placeholder="Comment here"></textarea>
                                 </div>
                             </div>
                         </fieldset>
