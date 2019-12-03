@@ -1,5 +1,6 @@
 import React from 'react';
 import Carousel from '../elements/Carousel';
+import Footer from '../elements/Footer';
 
 
 // created functional component named app and returns 
@@ -44,6 +45,7 @@ function Home() {
             <p>For those who love pen collecting</p>
           </div>
         </div>
+        <Footer />
     </div>
   );
 }

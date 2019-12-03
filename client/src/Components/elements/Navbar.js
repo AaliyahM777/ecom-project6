@@ -7,6 +7,7 @@ import LogIn from './Login';
 import Logout from './Logout';
 import SignUp from './Signup';
 import LogOut from './Logout';
+import Footer from './Footer';
 
 /* created a  navbar functional component and it returns 
   how the navbar  links will dsiplay and look through bootstrap
@@ -20,60 +21,42 @@ function NavBar(props) {
             {currentUser
             ? (
                 <div>
-                    <nav>
-                        <button type="button" data-toggle="collapse" data-target="#navigation-bar">
-                            <span>&#9776;</span>
-                        </button>
-
-                        <a href="/products"><img src="https://library.kissclipart.com/20190223/biw/kissclipart-pen-tool-logo-png-clipart-pen-clip-art-f38f00d153e75c72.png" class="img-fluid" alt="penpowerslogo"/> </a>
-                        <div>
-                        <ul>
-                            <li>
-                                <Link to="/">Home</Link>
-                            </li>
-                            <li>
-                                <Link to="/products">Products</Link>
-                            </li>                        
-                            <li>
-                                <Link to="/contact">Contact Us</Link>
-                            </li>
-                            <li>
-                                <Link to="/logout">Logout</Link>
-                            </li>
-                        </ul>
-                        <Route exact path="/" component={Home} />
-                        <Route path="/products" component={Products} />
-                        <Route path="/contact" component={Contacts} />
-                        <Route path="/logout" render={(props) => <LogOut {...props} onLogOut={onLogOut} />} />
-                    </div>
-                    </nav>
+                    <ul className="navbar fixed-top justify-content-center">
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/">Home</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/products">Products</Link>
+                        </li>                        
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/contact">Contact Us</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/logout">Logout</Link>
+                        </li>
+                    </ul>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/products" component={Products} />
+                    <Route path="/contact" component={Contacts} />
+                    <Route path="/logout" render={(props) => <LogOut {...props} onLogOut={onLogOut} />} />
                 </div>
             )
             : (
                 <div>
-                    <nav>
-                        <button type="button" data-toggle="collapse" data-target="#navigation-bar">
-                            <span>&#9776;</span>
-                        </button>
-
-                        <a href="/products"><img src="https://library.kissclipart.com/20190223/biw/kissclipart-pen-tool-logo-png-clipart-pen-clip-art-f38f00d153e75c72.png" class="img-fluid" alt="penpowerslogo"/> </a>
-                        <div>
-                            <ul>
-                                <li>
-                                    <Link to="/">Home</Link>
-                                </li>
-                                <li>
-                                    <Link to="/login">Login</Link>
-                                </li>                        
-                                <li>
-                                    <Link to="/signup">Signup</Link>
-                                </li>
-                            </ul>
-                            <Route exact path="/" component={Home} />
-                            <Route path="/login" render={(props) => <LogIn {...props} onLoginSuccess={onLoginSuccess} />} />
-                            <Route path="/signup" render={(props) => <SignUp {...props} onSignUpSuccess={onSignUpSuccess} />} />
-                        </div>
-                    </nav>
+                    <ul className="navbar fixed-top justify-content-center">
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/">Home</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/login">Login</Link>
+                        </li>                        
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/signup">Signup</Link>
+                        </li>
+                    </ul>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/login" render={(props) => <LogIn {...props} onLoginSuccess={onLoginSuccess} />} />
+                    <Route path="/signup" render={(props) => <SignUp {...props} onSignUpSuccess={onSignUpSuccess} />} />
                 </div>
             )}
         </Router>

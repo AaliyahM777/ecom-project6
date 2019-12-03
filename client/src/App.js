@@ -58,7 +58,6 @@ class App extends React.Component {
                             : <Redirect to="/login" />
                     }} />
                 </Switch> */}
-                <Footer/>
             </div>
             </Router>
         )

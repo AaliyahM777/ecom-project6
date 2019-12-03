@@ -1,6 +1,4 @@
-html {
-    overflow-x: hidden;
-}
+
 
 /* This is going to be used for any modified/custom styling */
 
@@ -59,18 +57,17 @@ table {
 /*Boot strap Navbar*/
 .navbar {
     background-color: rgba(248, 247, 248, 0.7);
-    border-bottom:1px, solid #dedede;
     font-family: 'Alegreta Sans', sans-serif;
 }
 
-.navbar .navbar-nav .nav-link {
+.nav-item .nav-link {
 color:rgb(139, 56, 194);
 color: rgb(72, 33, 95);
 }
 
 
 /*the color when you hover over  these classes*/
-.navbar .navbar-nav .nav-link:hover {
+.nav-item .nav-link:hover {
     color:rgb(139, 56, 194);
     }
  /* size and padding space within each nav item*/   
@@ -88,8 +85,6 @@ align-items: center;
 
 
 }
-
-
 
 #header img{
     padding:0 0 20px 0;
@@ -123,11 +118,12 @@ img{
 width: 50%;
 }
 
-.container{
+/* Commented out to fix Footer */
+/* .container{
     padding:300px;
     text-align: center;
     font-size:100px;
-}
+} */
 
 .container2{
     padding-top:500px;
@@ -227,9 +223,6 @@ legend{
    width:60%;
     padding:50px;
     height:450px;
-}
-div{
-    padding:30px;
 }
 
 h3{
