@@ -20,7 +20,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	/* font-size: 100%; */
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -54,7 +54,7 @@ table {
 /****Media Queries***/
 @media only screen
  and (min-device-width:320px)
- and(max-device-width:732px){
+ and(max-device-width:767px){
      .nav-link{
          font-size:25px;
 
@@ -87,18 +87,16 @@ table {
          width:20%;
      }
 
-     index-header{
+     .index-header{
          font-size:100px;
      }
      .index-img{
-         width: 50px;
+         width: 50%;
      }
 
     }
 
-    .filter-display {
-        justify-content: center;
-    }
+  
 /*Boot strap Navbar*/
 .navbar {
     background-color: rgba(248, 247, 248, 0.7);
@@ -106,7 +104,6 @@ table {
 }
 
 .nav-item .nav-link {
-color:rgb(139, 56, 194);
 color: rgb(72, 33, 95);
 }
 
@@ -170,8 +167,9 @@ align-items: center;
 
 .index-header {
     text-align: center;
-    font-size: 100px;
+     font-size: 100px; 
     padding-top: 200px;
+    margin-bottom:100px;
 }
 
 
@@ -188,15 +186,15 @@ width: 50%;
 } */
 
 .container2{
-    padding-top:500px;
+    padding-top:150px;
     font-size: 50px;
 }
 
-#carouselExampleSlidesOnly{
+/* #carouselExampleSlidesOnly{
     padding:30px;
     width:100%;
     margin:auto;
-}
+} */
 
 
 
@@ -211,11 +209,11 @@ p{
 /* styles for my text input for my html form*/
 
 
-  form{
+  /* form{
       padding:50px;
       margin:auto;
       display:inline-block;
-  }
+  } */
   /* when someone clicks on any of the input text areas, it transitions and the  solid tan border pops up*/
   input[type=text]:focus {
     border:3px solid rgb(53, 13, 68);
@@ -260,7 +258,7 @@ body {
 
 
 legend{
-    font-size:60px;
+   
     text-shadow: 5px 5px rgb(48, 5, 116);
     color: white;
 }
@@ -415,7 +413,7 @@ input{
 
 
 .signup-button{
-    margin:15px;
+    /* margin:15px; */
     font-size:30px;
     border:rgb(72,33,95)3px solid;
     background-color:none;

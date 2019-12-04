@@ -1,6 +1,6 @@
 import React from 'react'
 import httpClient from '../../httpClient'
-import Footer from './Footer';
+
 class LogIn extends React.Component {
     state = {
         fields: { email: '', password: '' }
@@ -48,7 +48,7 @@ class LogIn extends React.Component {
                     </div>
 
                 </div>
-                <Footer />
+               
             </div>
         )
     }
