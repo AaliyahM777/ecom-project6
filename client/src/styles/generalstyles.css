@@ -51,9 +51,54 @@ table {
 
 
 
+/****Media Queries***/
+@media only screen
+ and (min-device-width:320px)
+ and(max-device-width:767px){
+     .nav-link{
+         font-size:25px;
+
+     }
+     li.nav-item{
+         padding: 0 50px;
+     }
+     .filter-label{
+         font-size:20px;
+         width:50%;
+         
+     }
+     
+     .index-header {
+        font-size: 50px;
+    }
+    .index-img {
+        width: 100%;
+        padding: 0;
+    }
 
 
 
+ }
+ @media only screen
+ and (min-device-width:1000px)
+ and(max-device-width:3000px){
+     .filter-label{
+         font-size:41px;
+         width:20%;
+     }
+
+     index-header{
+         font-size:100px;
+     }
+     .index-img{
+         width: 50px;
+     }
+
+    }
+
+    .filter-display {
+        justify-content: center;
+    }
 /*Boot strap Navbar*/
 .navbar {
     background-color: rgba(248, 247, 248, 0.7);
@@ -75,6 +120,23 @@ color: rgb(72, 33, 95);
     font-size:30px;
     padding:20px;
 }
+
+
+
+/** Products page**/
+.filter-display{
+    justify-content:center;
+}
+.product-container{
+    margin-bottom:20px;
+}
+
+.card-body{
+ width:253px;
+ height:259px;   
+}
+
+
 /*HEADER*/
 #header {
 background-size: cover;
@@ -147,16 +209,7 @@ p{
 
 
 /* styles for my text input for my html form*/
-input[type=text] {
-   
-    width:500px;
-    height:35px;
-    transition: 0.3s;
-    outline: none;
-    margin:auto;
-    display:block;
 
-  }
 
   form{
       padding:50px;
@@ -204,14 +257,7 @@ body {
     font-family: 'Alegreta Sans', sans-serif;
 }
 
-label{
-    font-size: 41px;
-    color: white;
-    margin:20px;
-    text-shadow: 5px 5px rgb(48, 5, 116);
-    font-family: "Verdana";
-    font-weight: 400;
-}
+
 
 legend{
     font-size:60px;
@@ -219,11 +265,7 @@ legend{
     color: white;
 }
 
-.whatstyle img{
-   width:60%;
-    padding:50px;
-    height:450px;
-}
+
 
 h3{
     font-size:35px;
@@ -233,7 +275,7 @@ h2{
 
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
     input[type="text"] {
         width: 50%;
     }
@@ -247,7 +289,7 @@ h2{
     .index-img{
         width:1000px;
     }
-}
+} */
 
 /****** CAROUSEL ******/
 
@@ -265,7 +307,6 @@ input[type="radio"] {
 
 
 .filter-label {
-    width:20%;
     float:left;
     text-align:center;
     background: rgb(48, 5, 116);;
@@ -277,7 +318,6 @@ input[type="radio"] {
     border: 1px solid #000000;
     border-radius: 10px;
 
-    font-size: 41px;
     color: white;
     margin: 20px;
     text-shadow: 5px 5px rgb(48, 5, 116);
@@ -289,3 +329,96 @@ input[type="radio"] {
 #email-error{
     color:#fff;
 }
+
+
+/***Login Styles ***/
+
+.login{
+    margin-top:175px;
+}
+
+
+
+.login-header{
+    font-size:50px;
+    color:rgb(72,33,95);
+    margin-bottom:20px;
+}
+
+.login-form{
+    text-align:center;
+}
+
+.login-label{
+    font-size:30px;
+    color:rgb(72, 33, 95);
+}
+
+.login-email{
+    margin: 20px;
+}
+
+.login-password{
+    margin: 20px;
+}
+
+
+
+input{
+    outline: none;
+    border:rgb(72,33,95)3px solid;
+}
+
+
+.login-button{
+    font-size:30px;
+    border:rgb(72,33,95)3px solid;
+    background-color:none;
+    color:rgb(72,33,95);
+}
+
+/***Sign Up Styles***/
+
+
+.signup{
+    margin-top:175px;
+}
+
+
+
+.signup-header{
+    font-size:50px;
+    color:rgb(72,33,95);
+    margin-bottom:20px;
+}
+
+.signup-form{
+    text-align:center;
+}
+
+.signup-label{
+    font-size:30px;
+    color:rgb(72, 33, 95);
+}
+
+.signup-username{
+    margin: 20px;
+}
+
+.signup-email{
+    margin: 20px;
+}
+.signup-password{
+    margin: 20px;
+}
+
+
+
+.signup-button{
+    margin:15px;
+    font-size:30px;
+    border:rgb(72,33,95)3px solid;
+    background-color:none;
+    color:rgb(72,33,95);
+}
+

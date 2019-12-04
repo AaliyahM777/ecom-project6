@@ -1,6 +1,7 @@
 import React from 'react';
 import ProductCards from '../elements/ProductCards'
 import {getProducts, getProductfilter, getPrices} from '../../Routes/apiroutes'
+import Footer from '../elements/Footer';
 
 
 // we created  a classical component which stores state and is seting data into an empty array
@@ -53,7 +54,7 @@ class Products extends React.Component {
                                 </div>
                             </div>
                                  {/* we created onclick event that will call our categories bus,funartpens as our filter button */}
-                            <div className="row">
+                            <div className="row filter-display">
                                 <button className="filter-label" onClick={() => getFilteredProducts('businesspens')}>Business Pens</button>
                                 <input type="radio" id="blue" name="color"/>
                                 <button className="filter-label" onClick={() => getFilteredProducts('funartpens')}>Fun/Art Pens</button>
@@ -72,7 +73,8 @@ class Products extends React.Component {
                     </section>
             
                 </div>
-            </body>    
+            </body>  
+            <Footer/>  
         </div>
     )}
 }

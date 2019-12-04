@@ -2,9 +2,9 @@ import axios from 'axios'
 import jwtDecode from 'jwt-decode'
 
 // instantiate axios
-// const httpClient = axios.create()
+const httpClient = axios.create()
 
-const httpClient = axios.create({baseURL:"http://localhost:5000"})
+//const httpClient = axios.create({baseURL:"http://localhost:5000"})
 
 httpClient.getToken = function() {
 	return localStorage.getItem('token')
