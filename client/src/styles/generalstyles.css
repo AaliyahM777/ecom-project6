@@ -1,8 +1,7 @@
 
 
+
 /* This is going to be used for any modified/custom styling */
-
-
 /* CSS Reset-to make  sure our css is read the same across all browsers*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -17,97 +16,99 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	/* font-size: 100%; */
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* font-size: 100%; */
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
-
-
-
-
-/****Media Queries***/
+/****** Media Queries ******/
+@media only screen 
+    and (min-device-width: 320px)
+    and (max-device-width: 767px) {
+        .nav-link{
+            font-size:25px;
+        }
+        li.nav-item{
+            padding: 0 50px;
+        }
+        .filter-label {
+            font-size: 20px;
+            width: 50%;
+        }
+        .index-header {
+            font-size: 50px;
+        }
+        .index-img {
+            width: 100%;
+            padding: 0;
+        }
+        .contact-header {
+            font-size: 75%;
+            margin-top: 200px;
+        }
+        .contact-text {
+            font-size: 75%;
+        }
+        legend {
+            font-size: 40px;
+        }
+    }
 @media only screen
- and (min-device-width:320px)
- and(max-device-width:767px){
-     .nav-link{
-         font-size:25px;
-
-     }
-     li.nav-item{
-         padding: 0 50px;
-     }
-     .filter-label{
-         font-size:20px;
-         width:50%;
-         
-     }
-     
-     .index-header {
-        font-size: 50px;
+    and (min-device-width: 1000px)
+    and (max-device-width: 3000px) {
+        .filter-label {
+            font-size: 41px;
+            width:20%;
+        }
+        .index-header {
+            font-size: 100px;
+        }
+        .index-img {
+            width: 50%;
+        }
+        .contact-header {
+            font-size: 100%;
+        }
+        .contact-text {
+            font-size: 100%;
+        }
+        legend {
+            font-size:60px;
+        }
     }
-    .index-img {
-        width: 100%;
-        padding: 0;
-    }
-
-
-
- }
- @media only screen
- and (min-device-width:1000px)
- and(max-device-width:3000px){
-     .filter-label{
-         font-size:41px;
-         width:20%;
-     }
-
-     .index-header{
-         font-size:100px;
-     }
-     .index-img{
-         width: 50%;
-     }
-
-    }
-
-  
 /*Boot strap Navbar*/
 .navbar {
     background-color: rgba(248, 247, 248, 0.7);
     font-family: 'Alegreta Sans', sans-serif;
 }
-
 .nav-item .nav-link {
 color: rgb(72, 33, 95);
 }
-
-
 /*the color when you hover over  these classes*/
 .nav-item .nav-link:hover {
     color:rgb(139, 56, 194);
@@ -117,23 +118,6 @@ color: rgb(72, 33, 95);
     font-size:30px;
     padding:20px;
 }
-
-
-
-/** Products page**/
-.filter-display{
-    justify-content:center;
-}
-.product-container{
-    margin-bottom:20px;
-}
-
-.card-body{
- width:253px;
- height:259px;   
-}
-
-
 /*HEADER*/
 #header {
 background-size: cover;
@@ -141,74 +125,61 @@ height:100%;
 color:black;
 display:flex;
 align-items: center;
-
-
 }
-
 #header img{
     padding:0 0 20px 0;
     width:80%;
 }
-
-
 #header .header-right {
     background-color: rbga(0,0,0,0.5);
     padding:30px;
     border-radius:10px;
 }
-
 .header{
     padding:100px;
 }
-
 .page-header {
     padding-top: 200px;
 }
-
 .index-header {
     text-align: center;
-     font-size: 100px; 
     padding-top: 200px;
-    margin-bottom:100px;
+    color: rgb(72, 33, 95);
+    margin-bottom: 100px;
 }
-
-
-
 img{
 width: 50%;
 }
-
 /* Commented out to fix Footer */
 /* .container{
     padding:300px;
     text-align: center;
     font-size:100px;
 } */
-
 .container2{
-    padding-top:150px;
+    margin-top: 150px;
     font-size: 50px;
 }
-
 /* #carouselExampleSlidesOnly{
     padding:30px;
     width:100%;
     margin:auto;
 } */
-
-
-
-
 p{
     padding:10px;
     text-align: center;
     font-size:27px;
 }
-
-
 /* styles for my text input for my html form*/
-
-
+/* input[type=text] {
+   
+    width:500px;
+    height:35px;
+    transition: 0.3s;
+    outline: none;
+    margin:auto;
+    display:block;
+  } */
   /* form{
       padding:50px;
       margin:auto;
@@ -218,7 +189,6 @@ p{
   input[type=text]:focus {
     border:3px solid rgb(53, 13, 68);
   }
-
   input[type=submit]{
       padding:15px;
       color: rgb(53, 13, 68);
@@ -227,16 +197,14 @@ p{
 textarea{
      width:100%;
     height:350px;
-
 }
-  footer { 
+footer { 
     background-color:rgb(53, 13, 68);
     color:white;
     padding: 10px;
     margin-top:20px;
    
-  }
-
+}
   .myform{
     border-radius: 5px;
     border: 2px solid white;
@@ -246,33 +214,37 @@ textarea{
     margin:auto;
     background: rgb(59,3,163);
   }
-
   
-
-
 body {
     text-align: center;
     font-family: 'Alegreta Sans', sans-serif;
 }
-
-
-
+/* label{
+    font-size: 41px;
+    color: white;
+    margin:20px;
+    text-shadow: 5px 5px rgb(48, 5, 116);
+    font-family: "Verdana";
+    font-weight: 400;
+} */
 legend{
-   
     text-shadow: 5px 5px rgb(48, 5, 116);
     color: white;
 }
-
-
-
+/* .whatstyle img{
+   width:60%;
+    padding:50px;
+    height:450px;
+} */
 h3{
     font-size:35px;
 }
 h2{
     font-size:60px;
-
 }
-
+.text-center {
+    margin-top: 100px;
+}
 /* @media (max-width: 800px) {
     input[type="text"] {
         width: 50%;
@@ -288,22 +260,15 @@ h2{
         width:1000px;
     }
 } */
-
 /****** CAROUSEL ******/
-
 .carousel-indicators li {
     background-color: purple;
     padding:6px;
 }
-
-
-
 /* Style my filter  */
 input[type="radio"] {
     display:none;
 }
-
-
 .filter-label {
     float:left;
     text-align:center;
@@ -315,7 +280,7 @@ input[type="radio"] {
     cursor:pointer;
     border: 1px solid #000000;
     border-radius: 10px;
-
+    /* font-size: 41px; */
     color: white;
     margin: 20px;
     text-shadow: 5px 5px rgb(48, 5, 116);
@@ -327,96 +292,77 @@ input[type="radio"] {
 #email-error{
     color:#fff;
 }
-
-
-/***Login Styles ***/
-
-.login{
-    margin-top:175px;
+/****** Products Page ******/
+.filter-display {
+    justify-content: center;
 }
-
-
-
-.login-header{
-    font-size:50px;
-    color:rgb(72,33,95);
-    margin-bottom:20px;
+.product-container {
+    margin-bottom: 20px;
 }
-
-.login-form{
-    text-align:center;
+.card-body {
+    width: 253px;
+    height: 259px;
 }
-
-.login-label{
-    font-size:30px;
-    color:rgb(72, 33, 95);
+/****** Login Styles ******/
+.login {
+    margin-top: 175px;
 }
-
-.login-email{
+.login-header {
+    font-size: 50px;
+    color: rgb(72, 33, 95);
+    margin-bottom: 20px;
+}
+.login-form {
+    text-align: center;
+}
+.login-label {
+    font-size: 30px;
+    color: rgb(72, 33, 95);
+}
+.login-email {
     margin: 20px;
 }
-
-.login-password{
+.login-password {
     margin: 20px;
 }
-
-
-
-input{
+input {
     outline: none;
-    border:rgb(72,33,95)3px solid;
+    border: rgb(72, 33, 95) 3px solid;
 }
-
-
-.login-button{
-    font-size:30px;
-    border:rgb(72,33,95)3px solid;
-    background-color:none;
-    color:rgb(72,33,95);
+.login-button {
+    font-size: 30px;
+    border: rgb(72, 33, 95) 3px solid;
+    background-color: none; 
+    color: rgb(72, 33, 95);
 }
-
-/***Sign Up Styles***/
-
-
-.signup{
-    margin-top:175px;
+/****** Signup Styles ******/
+.signup {
+    margin-top: 175px;
 }
-
-
-
-.signup-header{
-    font-size:50px;
-    color:rgb(72,33,95);
-    margin-bottom:20px;
+.signup-header {
+    font-size: 50px;
+    color: rgb(72, 33, 95);
+    margin-bottom: 20px;
 }
-
-.signup-form{
-    text-align:center;
+.signup-form {
+    text-align: center;
 }
-
-.signup-label{
-    font-size:30px;
-    color:rgb(72, 33, 95);
+.signup-label {
+    font-size: 30px;
+    color: rgb(72, 33, 95);
 }
-
-.signup-username{
+.signup-username {
     margin: 20px;
 }
-
-.signup-email{
+.signup-email {
     margin: 20px;
 }
-.signup-password{
+.signup-password {
     margin: 20px;
 }
-
-
-
-.signup-button{
-    /* margin:15px; */
-    font-size:30px;
-    border:rgb(72,33,95)3px solid;
-    background-color:none;
-    color:rgb(72,33,95);
+.signup-button {
+    font-size: 30px;
+    border: rgb(72, 33, 95) 3px solid;
+    background-color: none; 
+    color: rgb(72, 33, 95);
 }
-
