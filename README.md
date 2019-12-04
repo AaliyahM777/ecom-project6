@@ -41,9 +41,9 @@ To start react app
  ## Progressive Web App(PWA)
  Working app for mobile screens (images down below):
 
-<img src="client/Screenshot_2019-12-04-13-48-17.png" alt="penpowers home" width="250x">|<img src="client/Screenshot_2019-12-04-13-49-22.png" alt="penpowers home" width="250x"> | <img src="client/Screenshot_2019-12-04-13-49-33.png" alt="penpowers home" width="250x">
+<img src="client/Screenshot_2019-12-04-14-55-41.png" alt="penpowers home" width="250x">|<img src="client/Screenshot_2019-12-04-14-59-46.png" alt="penpowers home" width="250x"> | <img src="client/Screenshot_2019-12-04-13-49-22.png" alt="penpowers home" width="250x">
 --- | --- | ---
- <img src="client/Screenshot_2019-12-04-13-49-39.png" alt="penpowers home" width="250x">| <img src="client/Screenshot_2019-12-04-13-50-47.png" alt="penpowers home" width="250x"> |
+ <img src="client/Screenshot_2019-12-04-13-49-33.png" alt="penpowers home" width="250x">| <img src="client/Screenshot_2019-12-04-13-49-39.png" alt="penpowers home" width="250x"> | <img src="client/Screenshot_2019-12-04-13-50-47.png" alt="penpowers home" width="250x">
 
 
 ## Heroku App
