@@ -1,8 +1,10 @@
-# EcomerceProject ver.2 includes:
+# EcomerceProject Project 6 includes:
 
-## Languages used:
+## Languages and software tools used:
  - Node.js
  - React
+ - MongoDb
+ - TDD
  ## Features
 #### Client- Contains Ecommerce Website React App
 In src file...
