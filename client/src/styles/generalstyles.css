@@ -54,7 +54,7 @@ table {
 /****Media Queries***/
 @media only screen
  and (min-device-width:320px)
- and(max-device-width:767px){
+ and(max-device-width:732px){
      .nav-link{
          font-size:25px;
 
