@@ -23,10 +23,21 @@ In src file...
 
 ## Authentication
 
+* To test authentication
+
+Users will not have access to the products page until they...
+
+- Signup:  As a new user on the site type in your name, email , and password 
+
+- Login: As a returning user login to the form with your previous email and password
+
+-Logout: Once current user has gained access to the full site they can logout and return to the log in menu
+
+
 ## Installation
 
 * Open your terminal
-* 
+ 
  To add in node modules
 
   `npm install` 
